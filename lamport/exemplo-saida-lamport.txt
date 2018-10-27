@@ -1,0 +1,34 @@
+linux@host: SD$ ./lamport.py 
+ -------------------------LAMPORT------------------------- 
+Número de processos: 3
+Número de eventos: 4
+Índice de processos: 
+0 - |P0|
+1 - |P1|
+2 - |P2|
+ ---------------------------------------------------------
+Processo emissor de evento: 0
+Processo receptor de evento: 1
+Timestamp de evento = 1
+Relógio de P0 = 1
+Relógio de P1 = 2
+Processo emissor de evento: 1
+Processo receptor de evento: 2
+Timestamp de evento = 3
+Relógio de P1 = 3
+Relógio de P2 = 4
+Processo emissor de evento: 2
+Processo receptor de evento: 1
+Timestamp de evento = 5
+Relógio de P2 = 5
+Relógio de P1 = 6
+Processo emissor de evento: 1
+Processo receptor de evento: 0
+Timestamp de evento = 7
+Relógio de P1 = 7
+Relógio de P0 = 8
+
+Registro de relógios de processos na execução de eventos:
+Relógio de P0: [0, 1, 8]
+Relógio de P1: [0, 2, 3, 6, 7]
+Relógio de P2: [0, 4, 5]

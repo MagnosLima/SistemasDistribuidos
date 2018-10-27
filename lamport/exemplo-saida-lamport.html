@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<pre><span style="background-color:#AA00AA"><i>linux@host:</i></span><span style="background-color:#AA00AA"><font color="#171717"> SD</font></span>$ ./lamport.py 
+<font color="#AA5500"> -------------------------LAMPORT------------------------- </font>
+<span style="background-color:#AA5500"><font color="#000000">Número de processos:</font></span> 3
+<span style="background-color:#00AA00"><font color="#000000">Número de eventos:</font></span> 4
+Índice de processos: 
+0 - |P0|
+1 - |P1|
+2 - |P2|
+ <font color="#AA5500">---------------------------------------------------------</font>
+<span style="background-color:#AA5500"><font color="#000000">Processo emissor de evento:</font></span> 0
+<span style="background-color:#00AA00"><font color="#000000">Processo receptor de evento:</font></span> 1
+Timestamp de evento = 1
+Relógio de P0 = 1
+Relógio de P1 = 2
+<span style="background-color:#AA5500"><font color="#000000">Processo emissor de evento:</font></span> 1
+<span style="background-color:#00AA00"><font color="#000000">Processo receptor de evento:</font></span> 2
+Timestamp de evento = 3
+Relógio de P1 = 3
+Relógio de P2 = 4
+<span style="background-color:#AA5500"><font color="#000000">Processo emissor de evento:</font></span> 2
+<span style="background-color:#00AA00"><font color="#000000">Processo receptor de evento:</font></span> 1
+Timestamp de evento = 5
+Relógio de P2 = 5
+Relógio de P1 = 6
+<span style="background-color:#AA5500"><font color="#000000">Processo emissor de evento:</font></span> 1
+<span style="background-color:#00AA00"><font color="#000000">Processo receptor de evento:</font></span> 0
+Timestamp de evento = 7
+Relógio de P1 = 7
+Relógio de P0 = 8
+
+<font color="#139DBB"><b>Registro de relógios de processos na execução de eventos:</b></font>
+<font color="#000000"><b>Relógio de P0: [0, 1, 8]</b></font>
+<font color="#000000"><b>Relógio de P1: [0, 2, 3, 6, 7]</b></font>
+<font color="#000000"><b>Relógio de P2: [0, 4, 5]</b></font>
+</pre>
+</html>
